@@ -1,0 +1,21 @@
+
+-- 파이썬 앱만들기
+python manage.py startapp 폴더명
+
+python manage.py makemigrations
+
+python manage.py migrate
+--
+gitignoree : git으로 관리하지않겠다
+
+python manage.py runserver : 서버실행
+-- 파이썬 쉘 만들기
+python manage.py shell
+
+from blog.models import Post
+
+Post.objects.all()
+
+quit() exit() : 나가기
+
+--
