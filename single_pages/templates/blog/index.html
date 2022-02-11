@@ -60,7 +60,7 @@
                     <div class="text-center my-5">
                         <h1 class="fw-bolder">환영합니다. 송현우의 블루그입니다.</h1>
                         <p class="lead mb-0">파이썬 Django를 활용한 블로그입니다.</p>
-                        {% for p in post_list %}
+                        {% for p in posts %}
                             <hr>
                             <h3><a href="{{ p.get_absolute_url }}">{{ p.title }}</a></h3>
                             <h4>{{p.created_at}}</h4>
