@@ -19,8 +19,13 @@ s
             </p>
             <hr>
             <h4>{ post.created_at }}</h4>
-            <p> { post.content }}</p>
-
+            <hr>
+            <!-- Preview Image -->
+                {% if post.head_image %}
+                    <p> { post.content }}</p>
+                {% else %}
+                    <p><img class="card-img-top" src="https://picsum.photos/700/300" alt="{{ p.title }}" /></p>
+                {% endif %}
             <hr>
         </div>
     </div>

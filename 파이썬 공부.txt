@@ -25,3 +25,5 @@ Post.objects.all()
 quit() exit() : 나가기
 
 --
+
+pip install Pillow
